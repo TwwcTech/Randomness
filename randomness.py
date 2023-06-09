@@ -6,25 +6,25 @@ from typing_extensions import LiteralString
 from resources.statics import RegistryVariables as rv
 
 """
-TODO: COMPLETE THE 'REGIMAN' CLASS BEFORE RUNNING/TESTING MAIN FILE
+TODO: COMPLETE THE 'REGIMAN' CLASS
 """
 
 if __name__ == "__main__":
-    # regiman = RegiMan(
-    #     hkeytype=rv.HKEY,
-    #     software_folder=rv.APPNAME
-    # )
-    # regapps = regiman.enum_regapps()
-    # regstatus: bool = regiman.status_check(
-    #     apps=regapps
-    # )
-    # match regstatus:
-    #     case False:
-    #         clearcon()
-    #         apikey_input: LiteralString = input("API key: ").strip()
-    #         regiman.create_key(
-    #             apikey=apikey_input
-    #         )
+    regiman = RegiMan(
+        hkeytype=rv.HKEY,
+        software_folder=rv.APPNAME
+    )
+    regapps = regiman.enum_regapps()
+    regstatus: bool = regiman.status_check(
+        apps=regapps
+    )
+    match regstatus:
+        case False:
+            clearcon()
+            apikey_input: LiteralString = input("API key: ").strip()
+            regiman.create_key(
+                apikey=apikey_input
+            )
     while True:
         clearcon()
         Menus(
