@@ -2,16 +2,19 @@ import winreg
 from typing_extensions import LiteralString
 
 
-class WinReg():
+class RegiMan():
     def __init__(self, hkeytype: LiteralString, software_folder: LiteralString) -> None:
         self.hkeytype = hkeytype
         self.software_folder = software_folder
 
-    def status_check(self) -> bool:  # TODO
+    def enum_regapps(self) -> list:  # TODO
         pass
 
-    def enum_key(self) -> list:  # TODO
+    def status_check(self, apps: list) -> bool:  # TODO
         pass
 
-    def create_key(self):  # TODO
+    def create_key(self, apikey: LiteralString):  # TODO
+        pass
+
+    def enum_key(self) -> LiteralString:
         pass
