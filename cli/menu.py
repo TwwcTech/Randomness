@@ -1,10 +1,11 @@
-
+from cli.conman import menu_padder
 
 class Menus():
     def __init__(self, title: str, dash_count: int) -> None:
         self.title = title
         self.dash_count = dash_count
 
+    @menu_padder
     def show_main(self):
         menu_options: dict = {
             "1": "Random Password",
