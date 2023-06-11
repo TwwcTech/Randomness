@@ -8,7 +8,8 @@ class RegiMan():
     def __init__(self, hkeytype: LiteralString, software_folder: LiteralString) -> None:
         self.hkeytype = hkeytype
         self.software_folder = software_folder
-        self.datestamp = sv.DATE_STAMP
+        self.datestamp: LiteralString = sv.DATE_STAMP
+        self.timestamp: LiteralString = sv.TIME_STAMP
         self.access_reg = winreg.ConnectRegistry(
             None,
             winreg.HKEY_CURRENT_USER
@@ -20,7 +21,7 @@ class RegiMan():
 
     def enum_regapps(self) -> list:
         try:
-            appnames = []
+            appnames: list = []
             for softwarefolders in range(35):
                 appnames.append(
                     winreg.EnumKey(
@@ -48,7 +49,7 @@ class RegiMan():
             )
             winreg.SetValueEx(
                 appname_key, "Init DateTime", 0,
-                winreg.REG_SZ, f"{sv.DATE_STAMP} {sv.TIME_STAMP}"
+                winreg.REG_SZ, f"{self.datestamp} {self.timestamp}"
             )
             winreg.SetValueEx(
                 appname_key, "APIKEY", 0,
@@ -64,7 +65,7 @@ class RegiMan():
                 self.regsoft,
                 self.software_folder
             )
-            api_key = winreg.QueryValueEx(
+            api_key: LiteralString = winreg.QueryValueEx(
                 appname_key,
                 "APIKEY"
             )
