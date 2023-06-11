@@ -18,6 +18,8 @@ if __name__ == "__main__":
     regstatus: bool = regiman.status_check(
         apps=regapps
     )
+    print(regapps)
+    print(regstatus)
     match regstatus:
         case False:
             clearcon()
@@ -25,7 +27,7 @@ if __name__ == "__main__":
             regiman.create_key(
                 apikey=apikey_input
             )
-    while True:
+    while regstatus is True:
         clearcon()
         Menus(
             title="MAIN MENU",
