@@ -6,6 +6,10 @@ from typing_extensions import LiteralString
 from resources.statics import RegistryVariables as rv
 from resources.statics import ConsoleResponses as conr
 
+"""
+TODO: CREATE NEW FILE TO PROCESS THE API CALLS [BACKEND]
+"""
+
 if __name__ == "__main__":
     regiman = RegiMan(
         hkeytype=rv.HKEY,
