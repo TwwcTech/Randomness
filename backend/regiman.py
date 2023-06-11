@@ -1,6 +1,7 @@
 import re
 import winreg
 from typing_extensions import LiteralString
+from resources.statics import ExceptionNotes as en
 from resources.statics import SystemVaraibles as sv
 
 
@@ -31,7 +32,7 @@ class RegiMan():
                 )
             return appnames
         except Exception as ex:
-            ex.add_note()  # TODO
+            ex.add_note(en.ENUM_APPS_ERROR)
             raise Exception(ex)
 
     def status_check(self, apps: list) -> bool:
@@ -56,7 +57,7 @@ class RegiMan():
                 winreg.REG_SZ, apikey
             )
         except Exception as ex:
-            ex.add_note()  # TODO
+            ex.add_note(en.CREATE_KEY_ERROR)
             raise Exception(ex)
 
     def enum_key(self) -> LiteralString:
@@ -72,5 +73,5 @@ class RegiMan():
             key, _ = api_key
             return key
         except Exception as ex:
-            ex.add_note()  # TODO
+            ex.add_note(en.ENUM_REGKEY_ERROR)
             raise Exception(ex)
