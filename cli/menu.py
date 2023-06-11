@@ -9,8 +9,8 @@ class Menus():
     @menu_padder
     def show_main(self):
         menu_options: dict = {
-            "1": "Random Password",
-            "2": "Random Passphrase",
+            "1": "Generate Password",
+            "2": "Generate PIN",
             "3": "Exit"
         }
         print(f"{'-'*self.dash_count} {self.title} {'-'*self.dash_count}")
