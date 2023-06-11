@@ -1,5 +1,6 @@
 from cli.conman import menu_padder
 
+
 class Menus():
     def __init__(self, title: str, dash_count: int) -> None:
         self.title = title
