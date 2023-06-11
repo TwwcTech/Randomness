@@ -16,5 +16,5 @@ class RegiMan():
     def create_key(self, apikey: LiteralString):  # TODO
         pass
 
-    def enum_key(self) -> LiteralString:
+    def enum_key(self) -> LiteralString:  # TODO
         pass
