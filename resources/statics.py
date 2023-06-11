@@ -16,8 +16,8 @@ class RegistryVariables:
 
 class ConsoleResponses:
     INVALID_INPUT: str = "\nNot a valid option. Please select a menu option [1-3]\n"
-    _CONTINUE = "Press 'Enter' to continue"
-    MENU_OPTIONS = "Select a menu option: "
+    _CONTINUE: str = "Press 'Enter' to continue"
+    MENU_OPTIONS: str = "Select a menu option: "
 
 
 class ExceptionNotes:
