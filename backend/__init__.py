@@ -1,4 +1,3 @@
 __all__ = [
-    "regiman",
-    "rdoc"
+    "regiman"
 ]
