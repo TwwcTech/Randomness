@@ -4,8 +4,15 @@ from cli.conman import clearcon
 from backend.regiman import RegiMan
 from rdoclient import RandomOrgClient
 from typing_extensions import LiteralString
+from resources.statics import RDOVariables as rdv
 from resources.statics import RegistryVariables as rv
 from resources.statics import ConsoleResponses as conr
+
+"""
+TODO: STARTING @ LINE 44 [MAIN MENU OPTION 1: GENERATE PASSWORD | 2: GENERATE PIN]
+TODO: STARTING @ LINE 56 [USE THE GENERATE STRING METHOD TO CREATE THE PASSWORD]
+TODO: STARTING @ LING 50 [USE THE GENERATE INTEGER METHOD TO CREATE THE PIN]
+"""
 
 if __name__ == "__main__":
     regiman: object = RegiMan(
@@ -35,18 +42,24 @@ if __name__ == "__main__":
         ).show_main()
         menu_choice: str = input(conr.MENU_OPTIONS).strip()
         match menu_choice:
-            case "1":
-                index_input: int = int(input("index: ").strip())
-                index_input = index_input + 2 if index_input == 0 else index_input + \
-                    1 if index_input == 1 else index_input
-                minimum_input: str = input("Min: ").strip()
-                maximum_input: str = input("Max: ").strip()
-                gen_ints: list = rd.generate_integers(
-                    index_input,
-                    minimum_input,
-                    maximum_input
-                )
-                print(f"\nResults:\n{gen_ints}\n")
+            case "1":  # TODO
+                # index_input: int = int(input("index: ").strip())
+                # index_input = index_input + 2 if index_input == 0 else index_input + \
+                #     1 if index_input == 1 else index_input
+                # minimum_input: str = input("Min: ").strip()
+                # maximum_input: str = input("Max: ").strip()
+                # gen_ints: list = rd.generate_integers(
+                #     index_input,
+                #     minimum_input,
+                #     maximum_input
+                # )
+                # print(f"\nResults:\n{gen_ints}\n")
+                # gen_string = rd.generate_strings(
+                #     n=1,
+                #     length=maximum_input,
+                #     characters=rdv.CHARACTERS
+                # )
+                # print(f"\nResults:\n{gen_string}\n")
                 input(conr._CONTINUE)
             case "2":  # TODO
                 pass
