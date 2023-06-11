@@ -4,22 +4,17 @@ from cli.conman import clearcon
 from backend.regiman import RegiMan
 from typing_extensions import LiteralString
 from resources.statics import RegistryVariables as rv
-
-"""
-TODO: COMPLETE THE 'REGIMAN' CLASS
-"""
+from resources.statics import ConsoleResponses as conr
 
 if __name__ == "__main__":
     regiman = RegiMan(
         hkeytype=rv.HKEY,
         software_folder=rv.APPNAME
     )
-    regapps = regiman.enum_regapps()
+    regapps: list = regiman.enum_regapps()
     regstatus: bool = regiman.status_check(
         apps=regapps
     )
-    print(regapps)
-    print(regstatus)
     match regstatus:
         case False:
             clearcon()
@@ -43,7 +38,5 @@ if __name__ == "__main__":
                 clearcon()
                 exit(0)
             case _:
-                print(
-                    "\nNot a valid option. Please select a menu option [1-3]\n"
-                )
+                print(conr.INVALID_INPUT)
                 sleep(1.5)
