@@ -27,5 +27,6 @@ class ExceptionNotes:
 
 
 class RDOVariables:
-    CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@"
-    INTEGERS = "0123456789"
+    PASSWORD_CHAR = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@"
+    PIN_CHAR = "0123456789"
+    COMPLEX_PIN_CHAR = "0123456789!@$-"
