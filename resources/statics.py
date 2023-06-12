@@ -24,3 +24,8 @@ class ExceptionNotes:
     ENUM_APPS_ERROR: str = "ERROR: Unable to enumerate apps in the regkey [Line: 22 | File: 'regiman.py']"
     CREATE_KEY_ERROR: str = "ERROR: Unable to create the registry key [Line: 44 | File: 'regiman.py']"
     ENUM_REGKEY_ERROR: str = "ERROR: Unable to enumerate the regkey [Line: 62 | File: 'regiman.py']"
+
+
+class RDOVariables:
+    CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@"
+    INTEGERS = "0123456789"
