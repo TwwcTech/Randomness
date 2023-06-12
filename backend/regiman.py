@@ -1,6 +1,6 @@
 import re
 import winreg
-from typing_extensions import LiteralString
+from typing_extensions import LiteralString, Literal
 from resources.statics import ExceptionNotes as en
 from resources.statics import SystemVaraibles as sv
 
@@ -23,7 +23,7 @@ class RegiMan():
     def enum_regapps(self) -> list:
         try:
             appnames: list = []
-            for softwarefolders in range(35):
+            for softwarefolders in range(40):
                 appnames.append(
                     winreg.EnumKey(
                         self.regsoft,

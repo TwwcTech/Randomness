@@ -42,13 +42,12 @@ if __name__ == "__main__":
                     input("Length of Password [MUST BE AT LEAST 8 CHARACTERS]: ").strip())
                 pass_length = (8 - pass_length) + \
                     pass_length if pass_length < 8 else pass_length
-                print(pass_length)
-                gen_pin = rd.generate_strings(
+                gen_pass = rd.generate_strings(
                     n=1,
                     length=pass_length,
                     characters=rdv.PASSWORD_CHAR
                 )
-                print(f"\nResults:\n{gen_pin}\n")
+                print(f"\nResults:\n{gen_pass}\n")
                 input(conr._CONTINUE)
             case "2":
                 while True:
@@ -57,7 +56,7 @@ if __name__ == "__main__":
                         title="PIN GENERATOR",
                         dash_count=10
                     ).show_pin_submenu()
-                    pinmenu_input = input("Select a menu option: ")
+                    pinmenu_input = input(conr.MENU_OPTIONS)
                     match pinmenu_input:
                         case "1":
                             gen_pin = rd.generate_strings(
