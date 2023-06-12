@@ -16,3 +16,14 @@ class Menus():
         print(f"{'-'*self.dash_count} {self.title} {'-'*self.dash_count}")
         for num, options in menu_options.items():
             print(f"{num} - {options}")
+
+    @menu_padder
+    def show_pin_submenu(self):
+        menu_options: dict = {
+            "1": "Standard PIN",
+            "2": "Secure PIN",
+            "3": "Back"
+        }
+        print(f"{'-'*self.dash_count} {self.title} {'-'*self.dash_count}")
+        for num, options in menu_options.items():
+            print(f"{num} - {options}")
