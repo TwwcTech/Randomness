@@ -42,7 +42,20 @@ if __name__ == "__main__":
         ).show_main()
         menu_choice: str = input(conr.MENU_OPTIONS).strip()
         match menu_choice:
-            case "1":  # TODO
+            case "1":
+                pass_length: int = int(
+                    input("Length of Password [MUST BE AT LEAST 8 CHARACTERS]: ").strip())
+                pass_length = (8 - pass_length) + \
+                    pass_length if pass_length < 8 else pass_length
+                print(pass_length)  # TODO
+                gen_string = rd.generate_strings(
+                    n=1,
+                    length=pass_length,
+                    characters=rdv.PASSWORD_CHAR
+                )
+                print(f"\nResults:\n{gen_string}\n")
+                input(conr._CONTINUE)
+            case "2":
                 # index_input: int = int(input("index: ").strip())
                 # index_input = index_input + 2 if index_input == 0 else index_input + \
                 #     1 if index_input == 1 else index_input
@@ -54,18 +67,6 @@ if __name__ == "__main__":
                 #     maximum_input
                 # )
                 # print(f"\nResults:\n{gen_ints}\n")
-                # gen_string = rd.generate_strings(
-                #     n=1,
-                #     length=maximum_input,
-                #     characters=rdv.CHARACTERS
-                # )
-                # print(f"\nResults:\n{gen_string}\n")
                 input(conr._CONTINUE)
-            case "2":  # TODO
-                pass
-            case "3":
-                clearcon()
-                exit(0)
-            case _:
-                print(conr.INVALID_INPUT)
-                sleep(1.5)
+            case "3": clearcon(), exit(0)
+            case _: print(conr.INVALID_INPUT), sleep(1.5)
