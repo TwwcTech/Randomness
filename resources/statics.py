@@ -29,4 +29,4 @@ class ExceptionNotes:
 class RDOVariables:
     PASSWORD_CHAR: LiteralString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!!!!!@@@@@"
     PIN_CHAR: LiteralString = "0123456789"
-    COMPLEX_PIN_CHAR: LiteralString = "0123456789!@$-"
+    COMPLEX_PIN_CHAR: LiteralString = "0123456789!!@@$$--"
