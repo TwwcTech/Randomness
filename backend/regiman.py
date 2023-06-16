@@ -1,6 +1,6 @@
 import re
 import winreg
-from typing_extensions import LiteralString, Literal
+from typing_extensions import LiteralString
 from resources.statics import ExceptionNotes as en
 from resources.statics import SystemVaraibles as sv
 
