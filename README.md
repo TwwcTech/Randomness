@@ -14,11 +14,11 @@ Randomness is a Python application designed to enhance your digital security. It
 
 To use Randomness, you’ll need a random.org API key. Here’s a step-by-step guide on how to obtain one:
 
-**Visit random.org**: Go to the random.org API Dashboard and sign up for a free developer key.
+1. **Visit random.org**: Go to the random.org API Dashboard and sign up for a free developer key.
 
-**Register**: If you don’t already have an account, you’ll need to register. This process involves providing some basic information and verifying your email address.
+2. **Register**: If you don’t already have an account, you’ll need to register. This process involves providing some basic information and verifying your email address.
 
-**Get Your API Key**: Once you’ve registered and logged in, you can create a new API key. This key will be used to authenticate your requests to the random.org API.
+3. **Get Your API Key**: Once you’ve registered and logged in, you can create a new API key. This key will be used to authenticate your requests to the random.org API.
 
 Remember to keep your API key secure and do not share it with others. Now, you’re ready to use Randomness!
 
