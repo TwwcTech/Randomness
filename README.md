@@ -32,3 +32,5 @@ Simply choose whether you want a password or a PIN, and Randomness will generate
 Please note that the randomness used in this application comes from atmospheric noise, which for many purposes is better than the pseudo-random number algorithms typically used in computer programs.
 
 We hope you find Randomness to be a valuable tool in your digital security toolkit. Please feel free to contribute to the Randomness project on GitHub and share any issues or suggestions you may have. Stay secure! 🔒
+
+**Random.org API URL**: https://api.random.org/dashboard
