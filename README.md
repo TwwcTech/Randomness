@@ -16,7 +16,7 @@ To use Randomness, you’ll need a random.org API key. Here’s a step-by-step g
 
 **Visit random.org**: Go to the random.org API Dashboard and sign up for a free developer key1.
 
-**Register**: If you don’t already have an account, you’ll need to register. This process involves providing some basic information and verifying your email address2.
+**Register**: If you don’t already have an account, you’ll need to register. This process involves providing some basic information and verifying your email address.
 
 **Get Your API Key**: Once you’ve registered and logged in, you can create a new API key2. This key will be used to authenticate your requests to the random.org API.
 
