@@ -24,7 +24,7 @@ Remember to keep your API key secure and do not share it with others. Now, youâ€
 
 # How to Use
 
-Once you have your random.org API key, you can input it into the Randomness application - it will ask you for the API the first time you run the application and store it in the Registry - "Computer\HKEY_CURRENT_USER\Software\Randomness" - if you've entered an
+Once you have your random.org API key, you can input it into the Randomness application - it will ask you for the API the first time you run the application and store it in the Registry - **Computer\HKEY_CURRENT_USER\Software\Randomness** - if you've entered an
 incorrect API, you can update it here.
 
 Simply choose whether you want a password or a PIN, and Randomness will generate a secure password or PIN for you.
